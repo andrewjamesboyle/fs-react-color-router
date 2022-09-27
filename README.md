@@ -51,3 +51,18 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 ## Additional considerations
 - Is any of your state redundant? For example, if you're tracking `wins`, `losses`, and `total`, you can probably get rid of `losses` state, and calculate it as `total - wins`.
 - Where should each piece of state live? How are you going to get data from where it lives to where it needs to be?
+
+Plan:
+
+1) Components
+    - Header: NavLinks
+    - Main: a large div with backgroundcolor set to rgb values pulled from URL
+
+in App.js
+    - header links to hardcoded rgb values
+    -switch
+        -route path='/rgb/:red/:green/:blue'
+            -render Main component
+
+in Main
+    - useParams()
