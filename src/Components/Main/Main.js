@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './Main.css';
 
 export default function Main() {
-  const params = useParams();
-  console.log('params', params);
+  const { red, green, blue } = useParams();
   return (
-    <div style={{ backgroundColor: `rgb(${params.red}, ${params.green}, ${params.blue})` }}>
-      PICK A COLOR
+    <div className='main' style={{ backgroundColor: `rgb(${red}, ${green}, ${blue})` }}>
+      {`rgb(${red}, ${green}, ${blue})`}
     </div>
   );
 }
