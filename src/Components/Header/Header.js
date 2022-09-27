@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
     <div>
-        <h1>RED</h1>
-        <h2>GREEN</h2>
-        <h3>BLUE</h3>
+      <NavLink to="/rgb/255/0/0">RED</NavLink>
+      <NavLink to="/rgb/0/255/0">GREEN</NavLink>
+      <NavLink to="/rgb/0/0/255">BLUE</NavLink>
     </div>
-  )
+  );
 }
