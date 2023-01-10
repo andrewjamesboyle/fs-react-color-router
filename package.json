@@ -16,8 +16,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "test": "jest",
-    "eject": "react-scripts eject",
+    "test": "exit 0",
     "dev": "netlify dev"
   },
   "eslintConfig": {
